@@ -16,7 +16,11 @@ const arr = [
   },
 ];
 
-const ul = document.querySelector("ul");
+const root = document.getElementById("root");
+
+const ul = document.createElement("ul");
+
+root.appendChild(ul);
 
 const createLi = (type, img, text) => {
   const li = document.createElement("li");
