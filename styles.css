@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* 400, 700 */
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  font-size: 15px;
+
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-height: 100vh;
+  user-select: none;
+  padding: 2rem;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  padding: 3rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.25rem;
+  color: var(--very-light-gray);
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+button {
+  background-color: var(--very-light-gray);
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: border 150ms ease-in-out, background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+button:hover {
+  border: 2px solid var(--very-light-gray);
+  background-color: transparent;
+}
+
+#root {
+  width: 60rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.sedans button {
+  color: var(--bright-orange);
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+.sedans button:hover,
+.suvs button:hover,
+.luxury button:hover {
+  color: var(--very-light-gray);
+}
+
+img {
+  display: block;
+  width: 64px;
+}
